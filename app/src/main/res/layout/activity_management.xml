@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC107"
+    tools:context=".management">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Library Management"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"
+        android:textColor="#F43B00"
+        android:gravity="center"
+        android:typeface="serif"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Id"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_candidateid"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Candidate Id"
+                    android:textColor="#F43B00"
+                    android:paddingLeft="10dp"
+                    android:inputType="number"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="20dp"/>
+                <Button
+                    android:id="@+id/btn_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#F43B00"
+                    android:text="get"
+                    android:paddingLeft="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="sans-serif-condensed-medium" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Name"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/txt_cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Candidate Name"
+                android:paddingLeft="10dp"
+                android:textColor="#F43B00"
+                android:textAllCaps="true"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Detail"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Candidate Detail"
+                android:paddingLeft="10dp"
+                android:textColor="#F43B00"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edt_issue"
+                    android:layout_width="200dp"
+                    android:inputType="number"
+                    android:textColor="#F43B00"
+                    android:layout_marginVertical="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Book Id"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30dp"/>
+
+                <Button
+                    android:id="@+id/btn_issue"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/edt_issue"
+                    android:text="Issue"
+                    android:layout_marginVertical="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="#F43B00"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30dp"/>
+                <EditText
+                    android:id="@+id/txt_return"
+                    android:layout_width="200dp"
+                    android:layout_below="@id/edt_issue"
+                    android:layout_height="wrap_content"
+                    android:hint="Book Id"
+                    android:textColor="#F43B00"
+                    android:inputType="number"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30dp"/>
+
+                <Button
+                    android:id="@+id/btn_return"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_return"
+                    android:text="Return"
+                    android:layout_below="@id/btn_issue"
+                    android:paddingLeft="10dp"
+                    android:background="#F43B00"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="30dp"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#F43B00"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-medium" />
+            <TextView
+                android:id="@+id/txt1_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#F43B00"
+                android:fontFamily="sans-serif-condensed-medium" />
+            <TextView
+                android:id="@+id/txt2_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="#F43B00"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed-medium" />
+            <Button
+                android:id="@+id/btn_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Manipulatin"
+                android:background="#F43B00"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to login"
+                android:background="#F43B00"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

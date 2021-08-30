@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC107"
+    tools:context=".candidate">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANDIDATE DATA MANIPULATION"
+        android:textSize="20dp"
+        android:textColor="#F43B00"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <EditText
+                android:id="@+id/edt_cid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id"
+                android:inputType="number"
+                android:textColor="#F43B00"
+                android:textSize="15dp"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Name"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <EditText
+                android:id="@+id/edt_cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="student name"
+                android:textColor="#F43B00"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                android:layout_marginVertical="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone"
+                android:textColor="#F43B00"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:layout_marginVertical="10dp"/>
+            <Button
+                android:id="@+id/btn_cadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:background="#F43B00"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="modify"
+                android:background="#F43B00"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <Button
+                android:id="@+id/btn_cdel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="delete"
+                android:background="#F43B00"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <Button
+                android:id="@+id/btn_csrch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:background="#F43B00"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+            <Button
+                android:id="@+id/btn_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="back to mang"
+                android:background="#F43B00"
+                android:textSize="30dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginVertical="10dp"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

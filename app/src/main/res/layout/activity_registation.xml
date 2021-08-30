@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC107"
+    tools:context=".registation">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTATION"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="#DD3C0A"
+        android:textSize="30dp"
+        android:typeface="serif"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UserName"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:paddingLeft="10dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="#DD3C0A"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/btn_retur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return to login"
+                android:background="#DD3C0A"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
