@@ -1,1 +1,1 @@
-# Liabrary-Management-AAndroid-Application(java + Android Studio)
+# Liabrary-Management-Android-Application(java + Android Studio)
